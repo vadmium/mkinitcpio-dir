@@ -1,0 +1,19 @@
+install ()
+{
+    MODULES=""
+    BINARIES=""
+    FILES=""
+    SCRIPT="dir"
+}
+
+help ()
+{
+cat<<HELP
+  Mounts a subdirectory of the filesystem as the actual root filesystem. Use
+  kernel parameter "dir" to specify the subdirectory. A leading slash (/) is
+  allowed but not necessary.
+  
+  Example:
+  dir=os/arch
+HELP
+}
