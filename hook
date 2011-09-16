@@ -1,12 +1,11 @@
 run_hook ()
 {
-    echo "Root FS is in: $dir"
-    
     dir_pre_mount_handler="$mount_handler"
     mount_handler=dir_mount_handler
 }
 
-dir_mount_handler () {
+dir_mount_handler ()
+{
     $dir_pre_mount_handler "$1"
-    mount --bind "$1/$dir" "$1"
+    mount --bind -- "$1/$dir" "$1"
 }
