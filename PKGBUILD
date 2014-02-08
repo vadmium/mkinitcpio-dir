@@ -7,6 +7,7 @@ pkgdesc="Initcpio hook to mount a subdirectory as the root file system"
 url="https://bbs.archlinux.org/viewtopic.php?pid=932362#p932362"
 arch=(any)
 license=("custom:Public domain")
+depends=(mkinitcpio)
 source=(README.txt hook install)
 md5sums=(SKIP SKIP SKIP)
 
