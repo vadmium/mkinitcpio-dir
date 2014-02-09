@@ -8,11 +8,7 @@ url="https://bbs.archlinux.org/viewtopic.php?pid=932362#p932362"
 arch=(any)
 license=("custom:Public domain")
 source=(README.txt hook install)
-md5sums=(
-  fd9f2f39e08838f24bb23a32750b999b
-  3ff39deb52dc7379b8509f388602df93
-  2e66d470b1ab50cf1dce778356c68599
-)
+md5sums=(SKIP SKIP SKIP)
 
 package() {
   local DEST=(
