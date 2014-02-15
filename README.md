@@ -5,20 +5,19 @@ than the root directory of a partition. The “dir=” kernel parameter specifie
 which subdirectory. A leading slash (/) is allowed but not necessary.
 
 This allows multiple separate operating systems to be installed in a single
-partition. For example a single partition could have:
+partition.
+For example a single partition could contain
+multiple OS filesystems and other shared files:
 
 * /os/arch-x86-64/bin/
-* /os/arch-x86-64/usr/
 * /os/arch-x86-64/etc/
 * . . .
 * /os/arch-i686/bin/
-* /os/arch-i686/usr/
 * /os/arch-i686/etc/
 * . . .
-* /os/debian/bin/ (potentially)
-* /os/win/WINDOWS/ (if a common filesystem was supported)
-* /boot/ (if not on its own partition)
 * /home/_user_/
+* /os/debian/ (potentially)
+* /os/win/WINDOWS/ (if a common filesystem was supported)
 
 It is achieved by using a “bind mount” of the subdirectory.
 
