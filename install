@@ -1,8 +1,5 @@
 build() {
-    MODULES=""
-    BINARIES=""
-    FILES=""
-    SCRIPT="dir"
+    add_runscript
 }
 
 help() {
