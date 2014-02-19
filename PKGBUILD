@@ -1,7 +1,7 @@
 # Maintainer: Martin Panter <vadmium à gmail·com>
 _name=dir
 pkgname="mkinitcpio-$_name"
-pkgver=0.1.0
+pkgver=0.2.0
 pkgrel=0
 pkgdesc="Initcpio hook to mount a subdirectory as the root file system"
 url="https://bbs.archlinux.org/viewtopic.php?pid=932362#p932362"
