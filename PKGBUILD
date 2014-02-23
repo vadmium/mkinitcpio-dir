@@ -8,12 +8,12 @@ url="https://bbs.archlinux.org/viewtopic.php?pid=932362#p932362"
 arch=(any)
 license=("custom:Public domain")
 depends=(mkinitcpio)
-source=(README.txt hook install)
+source=(README.md hook install)
 md5sums=(SKIP SKIP SKIP)
 
 package() {
   local DEST=(
-    "usr/share/doc/$pkgname/README.txt"
+    "usr/share/doc/$pkgname/README.md"
     "lib/initcpio/hooks/$_name"
     "lib/initcpio/install/$_name"
   )
